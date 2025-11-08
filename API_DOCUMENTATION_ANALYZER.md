@@ -1,9 +1,5 @@
 # Intellector Analyzer API Documentation
 
-**Version:** 1.0.0
-**Last Updated:** November 2025
-**Base URL:** `https://api.intellector-analyzer.com/v1`
-
 ---
 
 ## Table of Contents

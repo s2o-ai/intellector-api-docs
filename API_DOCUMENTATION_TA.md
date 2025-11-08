@@ -1,9 +1,5 @@
 # Teacher Content Management Platform - API Documentation
 
-**Version:** 1.0.0
-**Last Updated:** January 2025
-**Base URL:** `http://localhost:8000/v1`
-
 ---
 
 ## Table of Contents

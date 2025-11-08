@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Intellector AI Docs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <meta name="description" content="Comprehensive API documentation for Intellector AI - Analyzer API and Teacher Content Management Platform">
+  <title>Intellector AI Documentation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    :root {
+      --sidebar-width: 320px;
+    }
+    .sidebar {
+      width: var(--sidebar-width);
+    }
+    .sidebar-nav ul {
+      padding-left: 0;
+    }
+    .sidebar-nav ul ul {
+      padding-left: 15px;
+    }
+    .app-sub-sidebar {
+      display: block !important;
+    }
+  </style>
 </head>
 <body>
   <div id="app">Loading...</div>
@@ -13,21 +31,34 @@
       name: 'Intellector AI Documentation',
       repo: '',
       loadSidebar: true,
-      subMaxLevel: 3,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      subMaxLevel: 4,
+      sidebarDisplayLevel: 1,
       homepage: 'README.md',
       coverpage: false,
       notFoundPage: true,
       auto2top: true,
+      maxLevel: 4,
+      executeScript: true,
       search: {
         maxAge: 86400000,
         paths: 'auto',
         placeholder: 'Search...',
         noData: 'No Results!',
         depth: 6
+      },
+      pagination: {
+        previousText: 'Previous',
+        nextText: 'Next',
+        crossChapter: true
       }
     }
   </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 </body>
 </html>
