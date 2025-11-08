@@ -1,0 +1,10 @@
+theme: jekyll-theme-minimal
+title: Intellector API Documentation
+description: API Documentation for Intellector Platform
+markdown: kramdown
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+
